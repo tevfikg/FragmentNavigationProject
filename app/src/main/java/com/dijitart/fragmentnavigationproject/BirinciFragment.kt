@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.dijitart.fragmentnavigationproject.databinding.FragmentBirinciBinding
 
@@ -40,6 +41,7 @@ class BirinciFragment : Fragment() {
         binding.button.setOnClickListener {
            sonraki(it)
         }
+        Toast.makeText(requireContext(), "Hoşgeldiniz..", Toast.LENGTH_SHORT).show()
     }
 
     fun sonraki (view: View) {
